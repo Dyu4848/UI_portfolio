@@ -1,0 +1,580 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -20px
+  }
+  to {
+    margin-left: 0%
+  }
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: -50px
+  }
+  to {
+    margin-top: 15px;
+  }
+}
+
+@keyframes change-bg {
+  0% {
+    background: #ee6055;
+  }
+  25% {
+    background: #60d394;
+  }
+  50% {
+    background: #aaf683;
+  }
+  75% {
+    background: #ffd97d;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
+
+
+/* Body */
+body {
+  background: #dfd3c3;
+  padding-bottom: 100px;
+}
+
+/* Navbar */
+
+.container-fluid {
+  user-select: none;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  color: black;
+  animation: fade-in 3s ease, slide-right 3s ease;
+  text-decoration: none;
+}
+
+.nav_links {
+  float: right;
+  margin-right: 119px;
+  margin-top: 15px;
+  animation: fade-in 3s ease, slide-down 3s ease;
+}
+
+.home {
+  margin-left: 942px;
+  margin-right: 37px;
+}
+
+.projects {
+  margin-right: 37px;
+}
+
+.links {
+float: right;
+margin-top: -50px;
+animation: fade-in 3s ease, slide-down 3s ease;
+font-family: "Raleway", sans-serif;
+justify-content: space-between;
+}
+
+#portfolio {
+  font-size: 180%;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+#resume {
+  font-size: 180%;
+  margin-right: 50px;
+}
+
+#contact {
+  font-size: 180%;
+  margin-right: 60px;
+}
+
+/* About */
+#info {
+  user-select: none;
+  margin-left: 50px;
+}
+
+.intro {
+  position: absolute;
+  width: 45%;
+  left: 119px;
+  top: 200px;
+  color: #00A1C5;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48px;
+  animation: slide-right 2s ease, fade-in ease 3s;
+}
+
+.name_job {
+  font-size: 65px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.job {
+  margin-top: -30px;
+}
+
+.pre_designer {
+  margin-top: -50px;
+}
+
+.designer {
+  margin-top: -30px;
+  color: #EB9E09;
+}
+
+.description {
+  margin-top: -10px;
+  width: 612px; 
+  height: 180px; 
+  color: rgba(30, 30, 30, 0.87); font-size: 23px; 
+  font-family: Poppins; 
+  font-weight: 500; 
+  letter-spacing: 1.15px; 
+  word-wrap: break-word;
+}
+
+.hire_pad {
+  margin-top: 60px;
+  width: 200px;
+  height: 54px;
+  background: #00A1C5;
+  box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.71);
+  border-radius: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.hire_pad:hover {
+  background-color: #00839F;
+}
+
+.hire_pad:active {
+  background-color: #00839F;
+  transform: translateY(4px);
+  box-shadow: 0 8px 8px #666;
+}
+
+.hire {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 196px;
+  color: white;
+  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  word-wrap: break-word;
+  user-select: none;
+}
+
+.ux_img {
+  margin-top: -450px;
+  margin-bottom: 150px;
+  margin-left: -40px;
+  width: 426px; 
+  height: 469px; 
+  background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%); border-bottom-left-radius: 213px;
+  margin-left: 800px;
+  }
+
+@media screen and (max-width: 1370px) {
+  #intro {
+    width: 60%
+  }
+}
+
+#skills {
+  margin-top: -200px;
+  margin-left: 1050px;
+}
+
+#figma {
+  height: 230px;
+  width: 300px;
+  position: absolute;
+  margin-left: 380px;
+  margin-top: 1100px;
+  transform: rotate(20deg);
+}
+
+#figma:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+
+#css {
+  position: absolute;
+  height: 320px;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 750px;
+  transform: rotate(20deg);
+}
+
+#css:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+#js {
+  position: absolute;
+  width: 400px;
+  height: 230px;
+  margin-left: -30px;
+  margin-top: 1100px;
+  transform: rotate(-20deg);
+}
+
+#js:hover {
+  transform: rotate(20deg);
+  transition: .3s;
+}
+
+#react {
+  position: absolute;
+  width: 280px;
+  height: 230px;
+  margin-left: 400px;
+  margin-top:810px;
+  transform: rotate(20deg);
+}
+
+#react:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+#html {
+  position: absolute;
+  margin-top: 470px;
+  width: 450px;
+  height: 280px;
+  margin-left: -65px;
+  transform: rotate(-20deg);
+}
+
+#html:hover {
+  transform: rotate(20deg);
+  transition: .3s;
+}
+
+#github {
+  position: absolute;
+  margin-left: 440px;
+  margin-top: 480px;
+  height: 250px;
+  width: 220px;
+  transform: rotate(20deg);
+}
+
+#github:hover {
+  transform: rotate(-20deg);
+  transition: .3s;
+}
+
+
+#triangle {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 40%;
+  animation: change-bg 5s infinite alternate linear, fade-in 3s ease;
+  border-top-left-radius: 100%;
+}
+
+#certificate {
+  position: relative;
+  width: 650px;
+  margin-left: 55%;
+  margin-top: 10%;
+  animation: fade-in 3s ease;
+}
+
+@media screen and (max-width: 1600px) {
+  #certificate {
+    margin-left: 10px;
+    margin-top: 1000px;
+  }
+}
+
+/* Portfolio */
+
+#portfolio-container {
+  margin-left: 5%;
+}
+
+/* .card {
+  position: relative;
+  border: 5px solid white;
+  background-color: white;
+  margin-top: 10%;
+  margin-left:10%;
+  max-width: 400px;
+  height: 350px;
+  box-shadow: 0 6px 10px white;
+  border-radius: 10px;
+  overflow: hidden;
+} */
+
+#pwGen-text {
+  position: absolute;
+}
+
+#pwGen {
+  width: 30%;
+  height: 30vh;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 15%;
+  cursor: pointer;
+  animation: fade-in 3s ease;
+}
+
+/* .card2 {
+  position: relative;
+  border: 5px solid white;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10%;
+  margin-left:10%;
+  max-width: 400px;
+  height: 350px;
+  box-shadow: 0 6px 10px white;
+  border-radius: 10px;
+  overflow: hidden;
+} */
+
+#notes {
+  width: 30%;
+  height: 30vh;
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 40%;
+  cursor: pointer;
+  animation: fade-in ease 3s
+}
+
+/* .card3 {
+  position: relative;
+  border: 5px solid white;
+  background-color: white;
+  margin-top: 10%;
+  margin-left:10%;
+  max-width: 400px;
+  height: 350px;
+  box-shadow: 0 6px 10px white;
+  border-radius: 10px;
+  overflow: hidden;
+} */
+
+
+#quiz {
+  position: absolute;
+  width: 30%;
+  height: 30vh;
+  border-radius: 20px;
+  margin-top: 65%;
+  cursor: pointer;
+  animation: fade-in ease 3s;
+}
+
+#weather {
+  position: absolute;
+  width: 30%;
+  height: 30vh;
+  border-radius: 20px;
+  margin-top: 90%;
+  cursor: pointer;
+  animation: fade-in ease 3s;
+}
+
+
+/* Resume */
+#container {
+  margin-top: 100px;
+
+  font-size: 22px;
+  animation: fade-in ease 2s;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#resume-name {
+  margin-left: 35%;
+}
+
+#education {
+  margin-left: 10%;
+}
+
+#boulder-date {
+  float: right;
+  margin-right: 10%;
+}
+
+#rutgers-date {
+  float: right;
+  margin-right: 10%;
+}
+
+.skills {
+  margin-left: 10%;
+}
+
+.experience {
+  margin-left: 10%;
+}
+
+#lg-town {
+  float: right;
+  margin-right: 10%;
+}
+
+#lg-date {
+  float: right;
+  margin-right: 10%;
+}
+
+#cleaners-town {
+  float: right;
+  margin-right: 10%;
+}
+
+#cleaners-date {
+  float: right;
+  margin-right: 10%;
+}
+
+.certificates {
+  margin-left: 10%;
+}
+
+#bootcamp-date {
+  float: right;
+  margin-right: 10%;
+}
+
+#frcc-date {
+  float: right;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 1770px) {
+  #profile {
+    margin-top: 120px;
+  }
+
+  #skills {
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 650px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #resume {
+    float: left;
+    margin-left: -2px;
+    margin-right: 20px;
+  }
+
+  #contact {
+    float: left;
+  }
+
+  #portfolio {
+    float: left;
+    margin-left: 50px;
+  }
+}
+
+/* Contact section */
+
+.contact-me {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 20%;
+  animation: fade-in ease 3s;
+  color: white;
+  margin-top: 5%;
+  font-size: 180%;
+  margin-right: 60px;
+}
+.contact-me h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.contact-content {
+  border: 3px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 40vh;
+}
+.contact-content h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-container {
+  margin-right: 30%;
+  color: black;
+}
+
+.email-btn {
+  border: 3px solid white;
+  background: rgb(32, 35, 48);
+  color: black;
+  width: 200%;
+  height: 200%;
+  border-radius: 15%;
+  font-size: large;
+  cursor: pointer;
+  padding: 25%;
+  animation: change-bg 5s infinite;
+}
+
+
+
+
+
+
