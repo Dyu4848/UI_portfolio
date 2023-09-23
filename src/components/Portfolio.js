@@ -3,20 +3,77 @@ import React, { useState } from "react";
 function Portfolio() {
   return (
     <div id="portfolio-container">
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <img
+              className="weather"
+              src="../images/weather.png"
+              alt="Avatar"
+            ></img>
+            <p>HOVER</p>
+          </div>
+          <div className="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
 
-      <a target="_blank" href="https://dyu4848.github.io/password_gen/">
-        <img id="pwGen" src="./images/pwGen.png" alt="pwGen"></img>
-      </a>
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <img
+              className="weather"
+              src="../images/weather.png"
+              alt="Avatar"
+            ></img>
+            <p>HOVER</p>
+          </div>
+          <div className="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
 
-      <a target="_blank" href="https://notetaker12.herokuapp.com/notes">
-        <img id="notes" src="./images/notes.png" alt="notes"></img>
-      </a>
-      <a target="_blank" href="https://dyu4848.github.io/code_quiz/">
-        <img id="quiz" src="./images/quiz.png" alt="quiz"></img>
-      </a>
-      <a target="_blank" href="https://dyu4848.github.io/ServerApi_weather/">
-        <img id="weather" src="./images/weather.png" alt="weather"></img>
-      </a>
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <img
+              className="weather"
+              src="../images/weather.png"
+              alt="Avatar"
+            ></img>
+            <p>HOVER</p>
+          </div>
+          <div className="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front">
+            <img
+              className="weather"
+              src="../images/weather.png"
+              alt="Avatar"
+            ></img>
+            <p>HOVER</p>
+          </div>
+          <div className="flip-card-back">
+            <h1>John Doe</h1>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -43,16 +43,43 @@
   }
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+}
 
 /* Body */
 body {
-  background: #dfd3c3;
-  padding-bottom: 100px;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 13s ease infinite;
+	height: 100vh;
 }
 
 /* Navbar */
 
-.container-fluid {
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  color:olive;
+  text-decoration:none;
+}
+
+.nav_container {
   user-select: none;
   text-decoration: none;
 }
@@ -63,10 +90,10 @@ body {
   border: none;
   text-transform: uppercase;
   position: relative;
-  cursor: pointer;
   color: black;
   animation: fade-in 3s ease, slide-right 3s ease;
   text-decoration: none;
+  user-select: none;
 }
 
 .nav_links {
@@ -74,10 +101,11 @@ body {
   margin-right: 119px;
   margin-top: 15px;
   animation: fade-in 3s ease, slide-down 3s ease;
+  user-select: none;
 }
 
+
 .home {
-  margin-left: 942px;
   margin-right: 37px;
 }
 
@@ -120,7 +148,7 @@ justify-content: space-between;
   width: 45%;
   left: 119px;
   top: 200px;
-  color: #00A1C5;
+  color: white;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -163,7 +191,7 @@ justify-content: space-between;
   margin-top: 60px;
   width: 200px;
   height: 54px;
-  background: #00A1C5;
+  background: #1dc100;
   box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.71);
   border-radius: 5px;
   justify-content: flex-start;
@@ -174,11 +202,11 @@ justify-content: space-between;
 }
 
 .hire_pad:hover {
-  background-color: #00839F;
+  background-color: #179700;
 }
 
 .hire_pad:active {
-  background-color: #00839F;
+  background-color: #179700;
   transform: translateY(4px);
   box-shadow: 0 8px 8px #666;
 }
@@ -197,14 +225,12 @@ justify-content: space-between;
   user-select: none;
 }
 
-.ux_img {
-  margin-top: -450px;
+.wave {
+  margin-top: -420px;
   margin-bottom: 150px;
-  margin-left: -40px;
-  width: 426px; 
-  height: 469px; 
-  background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%); border-bottom-left-radius: 213px;
-  margin-left: 800px;
+  margin-left: 530px;
+  font-size: 70px;
+  animation: wave 2s infinite;
   }
 
 @media screen and (max-width: 1370px) {
@@ -335,18 +361,55 @@ justify-content: space-between;
   margin-left: 5%;
 }
 
-/* .card {
+.flip-card {
+  display: inline-block;
+  background-color: transparent;
+  margin-top: 200px;
+  margin-left: 45px;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px; 
+}
+
+.flip-card-inner {
   position: relative;
-  border: 5px solid white;
-  background-color: white;
-  margin-top: 10%;
-  margin-left:10%;
-  max-width: 400px;
-  height: 350px;
-  box-shadow: 0 6px 10px white;
-  border-radius: 10px;
-  overflow: hidden;
-} */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbbbbb6f;
+  color: black;
+}
+
+.weather {
+  width: 300px;
+  height: 300px;
+}
+
+
+.flip-card-back {
+  background-color: rgba(255, 255, 255, 0.217);
+  color: white;
+  transform: rotateY(180deg);
+}
 
 #pwGen-text {
   position: absolute;
@@ -423,7 +486,7 @@ justify-content: space-between;
 /* Resume */
 #container {
   margin-top: 100px;
-
+  color: white;
   font-size: 22px;
   animation: fade-in ease 2s;
 }

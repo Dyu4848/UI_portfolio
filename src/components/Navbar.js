@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="container-fluid">
-      <Link to="/">
+    <div className="nav_container">
         <div
           className="logo"
           style={{
@@ -20,7 +19,6 @@ function Navbar() {
         >
           David Yu
         </div>
-      </Link>
 
       <div className="nav_links">
         <Link to="/">

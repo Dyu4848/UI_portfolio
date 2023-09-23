@@ -24,10 +24,9 @@ const About = ({ setCurrentPage }) => {
           </div>
         </a>
 
-        <img
-          className="ux_img"
-          src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?w=1800&t=st=1695351416~exp=1695352016~hmac=099115f9ca7fee28d164ffe648efa89c52ae5f86b48db19f3939c6c0ef8e07b9"
-        />
+        <div className="wave">
+          👋
+        </div>
       </div>
     </div>
   );

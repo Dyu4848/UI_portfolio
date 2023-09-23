@@ -40,6 +40,8 @@ function Resume() {
         <ul>
           <li>HTML</li>
           <li>CSS</li>
+          <li>Figma</li>
+          <li>Wireframing</li>
           <li>Javascript</li>
           <li>Bootstrap</li>
           <li>React.JS</li>
