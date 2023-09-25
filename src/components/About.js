@@ -18,6 +18,7 @@ const About = ({ setCurrentPage }) => {
           interfaces. I hope to find an opportunity that allows me to utilize my
           skillset, while growing as a designer. Thanks for stopping by!
         </div>
+
         <a href="mailto:dyu4848@gmail.com">
           <div className="hire_pad">
             <div className="hire">Hire me!</div>
@@ -27,6 +28,11 @@ const About = ({ setCurrentPage }) => {
         <div className="wave">
           👋
         </div>
+
+        <div className="mba_img">
+          <img src="./images/macbook.png" alt="macbook"></img>
+        </div>
+        
       </div>
     </div>
   );

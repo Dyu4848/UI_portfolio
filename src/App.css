@@ -233,6 +233,11 @@ justify-content: space-between;
   animation: wave 2s infinite;
   }
 
+  .mba_img {
+    margin-left: 450px;
+    margin-top: -300px;
+  }
+
 @media screen and (max-width: 1370px) {
   #intro {
     width: 60%
